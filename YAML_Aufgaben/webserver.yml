@@ -1,0 +1,15 @@
+# Kommentare nicht vergessen!
+service:
+- app: webserver  # Ich würde jetzt sagen der Service-Block ist eine Dictionary
+  port: 8080      # also ein Block der mehrere Items mit key:values beinhaltet
+  version: 1.0
+  tier: Ein simpler Webserver
+- app: datenbank
+  port: 3000
+  version:        # eine Block-Liste wo Version als Key und die darunterliegeneden
+    - 1.0         # Zahlen als Values mitgeben werden
+    - 1.2
+    - 2.4
+  tier: "Hier eine DB"
+
+# Nicht ganz sicher was mit "Kommentare nicht vergessen" gemeint ist.
